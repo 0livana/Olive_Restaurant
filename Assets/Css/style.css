@@ -91,9 +91,8 @@ a:visited{
     font-weight: 500;
 }
 #landingcontent p{
-    font-style: italic;
     font-weight: bolder;
-    font-family:mono-space;
+    font-family: Arial;
     font-size: 0.6em;
     background: rgb(4 0 0 / 74%);
     color: yellow;
