@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600; 
+}
+/* Laptop view style */
+#laptopview{
+    display: flex;
+    justify-content: space-between;
+    background: #040e1069;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    color: ghostwhite;
+    
+}
+#laptopview ul{
+    padding: 1rem 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center; 
+    height: 100%;
+}
+#laptopview button{
+    display: none;
+}
+
+/*Mobile view style*/
+#mobileview{
+    width: 250px;
+    height: 55vh;
+    left: -310px;
+    position: absolute;
+    transition: all 0.3s ease-out;
+}
+#mobileview ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 30px;
+    height: 100%;
+    color: ghostwhite;
+    background: rgba(25, 21, 13, 0.405);
+}
+#mobileview button{
+    margin-left: 170px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Landing style*/
+#landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100vw;
+    height: 40em;
+    background: url(../Img/alex-haney-CAhjZmVk5H4-unsplash.jpg);
+    background-size: cover;
+    
+}
+#landingcontent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    color:white;
+    background: #67601314;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+#landingcontent p{
+    font-style: italic;
+    font-weight: bolder;
+    font-family:fantasy;
+    font-size: 0.6em;
+    background: rgb(4 0 0 / 74%);
+    color: yellow;
+}
+
+/* Top------------------------------------------ rated */
+article{
+    background: url(../Img/chris-ralston-09HGdZzkP-Q-unsplash.jpg);
+    background-size: cover;
+    margin-top: 0.5em;
+}
+#content{
+    background: rgba(118, 210, 238, 0.634);
+}
+.content{
+    padding:0.5em 1em;
+    font-style: oblique;   
+}
+h1, h2{
+    font-family:'Medula One', cursive;;
+    font-size: 2.5em;
+}
+.Featured{
+    padding: 10px 100px;
+    height: 350px;
+    display: flex;
+    overflow-x: scroll;
+   
+}
+.card{
+    border: 4px ridge rgb(237, 97, 97);
+    border-radius: 7px;
+    background: rgba(18, 17, 16, 0.649);
+    color: white;
+    margin: 10px;
+    min-width: 400px;
+    height: 100%;
+}
+.card h2{
+    font-size: 2em;
+    color: red;
+}
+.card img{
+    width: 100%;
+    height: 70%;
+}
+.cardcontent{
+    margin: 0;
+    padding-left: 0.5em;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+/* Ordermenu --------------------------------------------------section */
+
+#ordermenu{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgba(251, 176, 3, 0.578);
+    border-top-right-radius: 100em;
+    border-bottom-right-radius: 100em;
+}
+.cardmenu{
+    font-size: 1.5em;
+    display: flex;
+    font-style: italic;
+    flex-direction: column;
+    align-items: center;
+    width: 18em;
+    height: 12em;
+    margin: 1em 0.1em;
+    margin-bottom: 2.5em;
+    color: rgb(255, 0, 0);
+   
+}
+.cardmenu:hover{
+cursor: pointer;
+width: 25em;
+height: 19em;
+transition: all 3s ease-out;
+}
+.cardmenu img{
+    width: 100%;
+    height: 90%;
+    border: 4px double rgba(255, 0, 0, 0.772);
+    border-radius: 30px;
+}
+.stars{
+    display: flex;
+    color: rgb(245, 211, 20);
+}
+span{
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+/* About us----------------------------------------------------- section */
+#aboutus{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    color: white;
+    width: 100vw;
+    height: 30vw;
+    background: url(../Img/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg);
+    background-size: cover;
+}
+#aboutusc{ 
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+#aboutusc p{
+    line-height: 1.5em;
+    margin-top: 2em;
+    font-style:oblique ;
+}
+
+/* Footer -------------------------------------------------------section */
+#footer{
+    background: rgba(0, 0, 0, 0.847);
+    color: whitesmoke;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+.footer{
+    margin: 2em;
+    width: 50%;
+}
+#leftf textarea{
+    margin-top: 1em;
+    width: 90%;
+    height: 60%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+#social{
+    font-size: 1.5em;
+}
+#social *{
+    margin: 0 0.2em;
+}
+#social >:nth-of-type(1){
+    color: rgb(52, 89, 237);
+}
+#social >:nth-of-type(2){
+    color: white;
+}
+#social >:nth-of-type(3){
+    color: rgb(73, 177, 73);
+}
+
+
+
+/* Mobile View */
+@media screen and (max-width:576px){
+    #laptopview ul{
+        display: none;
+    }
+    #laptopview button{
+        display: block;
+    }
+    #landing{
+        height: 90vh;
+        font-size: 0.6em;
+    }
+    #landing p{
+        font-size: 0.7em;
+    }
+    #aboutus{
+        font-size: 0.5em;
+    }
+    #footer{
+        height: auto;
+        bottom: 0;
+    }
+    #footer>*{
+        width: 50%;
+        height: 20vh;
+        font-size: o.1em;
+    }
+    #leftf{
+        display: none;
+    }
+    br{
+        display: none;
+    }
+
+    #middlef{
+        font-size: 0.9em;
+        height: 100%;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width:920px){
+   
+    
+}
+
+/* Laptop view */
+@media screen and (max-width:1px){
+    
+}
